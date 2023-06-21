@@ -1,0 +1,14 @@
+<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <title>Login Page</title> <style> body { margin: 0 auto; width: 35%; background: #f4f4f4; font-family: Arial, sans-serif; font-size: 16px; } .form-box { background-color: #fff; margin: 50px auto; padding: 30px 20px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); } h1 { text-align: center; margin-top: 0px; color: #444; } label { display: inline-block; margin-bottom: 5px; color: #444; } input[type="text"], input[type="password"] { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 20px; box-sizing: border-box; font-size: 16px; font-family: Arial, sans-serif; } input[type="submit"] { background-color: #4CAF50; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; font-size: 16px; cursor: pointer; } input[type="submit"]:hover { background-color: #3e8e41; } .error { color: red; font-size: 12px; margin-bottom: 10px; } </style> </head> <body> <div class="form-box"> <h1>Login Form</h1> <form onsubmit="return validateForm()"> <label for="username">Username</label> <input type="text" id="username" name="username" required><br> <label for="password">Password</label> <input type="password" id="password" name="password" required><br> <input type="submit" value="Login"> </form> <p id="error" class="error"></p> </div> <script> function validateForm() { var username = document.getElementById("username").value; var password = document.getElementById("password").value; var error = document.getElementById("error");
+
+  if (username === "122" && password === "122") {
+    // 登录成功，跳转到另一个页面
+    window.location.href = "https://23sun-cn.github.io";
+    return false;
+  } else {
+    // 登录失败，提示错误信息
+    alert("2323332434");
+    return false;
+  }
+}
+</script>
+</body> </html>
